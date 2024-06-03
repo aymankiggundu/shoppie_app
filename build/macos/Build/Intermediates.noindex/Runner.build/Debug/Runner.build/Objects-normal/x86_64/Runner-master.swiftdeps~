@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "2eb25900db56848a5929fd8dd2dd6cbb846e1b165c44631e1d0c3a041a06c50a"
+build_start_time: [1716800965, 428725957]
+build_end_time: [1716800965, 482574939]
+inputs:
+  "/Users/aymankiggundu/Desktop/shoppie_app/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1716800944, 190858364]
+  "/Users/aymankiggundu/Desktop/shoppie_app/macos/Runner/AppDelegate.swift": !private [1716406760, 0]
+  "/Users/aymankiggundu/Desktop/shoppie_app/macos/Runner/MainFlutterWindow.swift": !private [1716406760, 0]

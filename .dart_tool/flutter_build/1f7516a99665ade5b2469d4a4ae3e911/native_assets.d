@@ -1,0 +1,1 @@
+ /Users/aymankiggundu/Desktop/shoppie_app/.dart_tool/flutter_build/1f7516a99665ade5b2469d4a4ae3e911/native_assets.yaml: 
