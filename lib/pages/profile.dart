@@ -16,7 +16,7 @@ class ProfilePage extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 50,
-              backgroundImage: NetworkImage('https://via.placeholder.com/150'),
+              backgroundImage: NetworkImage('/Users/aymankiggundu/Desktop/shoppie_app/assets/logo.webp'),
             ),
             SizedBox(height: 16),
             Text(
