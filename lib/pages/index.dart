@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shoppie_app/pages/offers.dart';
+import 'package:shoppie_app/pages/settings.dart';
 import 'profile.dart';
 import 'shop.dart';
 import 'cart.dart';
@@ -61,17 +63,48 @@ class FirstPage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const ProfilePage()),
+                  MaterialPageRoute(builder: (context) => const SettingsPage()),
                 );
               },
             ),
+             ListTile(
+              leading: Icon(Icons.settings, color: Colors.white),
+              title: Text('OFFERS', style: TextStyle(color: Colors.white)),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const OffersPage()),
+                );
+              },
+            ),
+             ListTile(
+              leading: Icon(Icons.settings, color: Colors.white),
+              title: Text('CART', style: TextStyle(color: Colors.white)),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SettingsPage()),
+                );
+              },
+            ),
+             ListTile(
+              leading: Icon(Icons.settings, color: Colors.white),
+              title: Text('SHOP', style: TextStyle(color: Colors.white)),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SettingsPage()),
+                );
+              },
+            ),
+
             ListTile(
               leading: Icon(Icons.login, color: Colors.white),
               title: Text('LOGIN', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const ProfilePage()),
+                  MaterialPageRoute(builder: (context) => const LoginPage()),
                 );
               },
             ),
@@ -89,8 +122,16 @@ class FirstPage extends StatelessWidget {
           ),
         ),
       backgroundColor: Color.fromARGB(255, 3, 16, 37),
-        leading: Icon(Icons.menu,
-        color:Colors.white ,),
+        leading: Builder(
+          builder: (context) {
+            return IconButton(
+              icon: Icon(Icons.menu, color: Colors.white),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+            );
+          },
+        ),
         actions: [
           IconButton(
             onPressed: () {},
